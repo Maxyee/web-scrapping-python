@@ -1,0 +1,9 @@
+import urllib.request
+from bs4 import BeautifulSoup
+
+
+wiki = "https://en.wikipedia.org/wiki/List_of_state_and_union_territory_capitals_in_india"
+page = urllib.request.urlopen(wiki)
+
+soup = BeautifulSoup(page)
+print (soup.prettify())

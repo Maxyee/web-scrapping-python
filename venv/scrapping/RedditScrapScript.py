@@ -9,8 +9,8 @@ request = urlnes.Request(url)
 html = urlnes.urlopen(request).read()
 
 soup = BeautifulSoup(html,'html.parser')
-main_table = soup.find("div", attrs={'id':'siteTable'})
-links = main_table.find_all("a",class_="title")
+main_table = soup.find("div", attrs={'id':'t3_8vkwjw'})
+links = main_table.find_all("a",class_="scrollerItem yj3st6-5 fUvsWd Post t3_8vkwjw  s18unrpv-0 itoCnT")
 
 extracted_records = []
 for link in links:
@@ -21,4 +21,4 @@ for link in links:
         'url': url
     }
     extracted_records.append(record)
-print(extracted_records)
+print(extracted_records.count)
