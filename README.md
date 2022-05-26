@@ -18,3 +18,7 @@ Finally before starting work with any scrapping folder we must activate the virt
 ```bash
 source venv/Scripts/activate
 ```
+
+## Scrapping simple projects
+- [Economic Time India News](https://github.com/Maxyee/web-scrapping-python/tree/master/news-scrapping)
+- [National Highways England](https://github.com/Maxyee/web-scrapping-python/tree/master/national-highways)
